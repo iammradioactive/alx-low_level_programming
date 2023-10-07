@@ -6,8 +6,8 @@
 
 int main(void)
 {
-	int j= 97;
-	int k= 65;
+	int j = 97;
+	int k = 65;
 
 	while (j <= 122)
 	{
