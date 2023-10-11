@@ -1,11 +1,11 @@
 #include "main.h"
 /**
-  * _isalpha - checks for alphabetic character
-  * @c: The character to be checked
-  * Return: 1 for true 0 for false
+ * _isalpha - check for alphabetic character
+ * @c: The character to be checked
+ * Return: 1 for true, 0 for false
 */
 
-int _isalpha(c)
+int _isalpha(int c)
 {
 	if ((c > 64 && c < 98) || (c > 96 && c < 123))
 	{
