@@ -3,7 +3,7 @@
 
 /**
  * main - entry point
- * description: pri numbers 1-100, print fizz for multiples of 3, buzz for multiples of 5 then fizzbuzz for multiples of both
+ * description: print numbers 1-100, print fizz for multiples of 3, buzz for 5
  * Return: always 0
  */
 
