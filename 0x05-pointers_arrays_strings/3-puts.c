@@ -1,9 +1,12 @@
 #include "main.h"
+
 /**
- * _puts - print a string followed by a new line
- * @str: string to print
- * Return: Always 0
-*/
+ * _puts - function with one argument
+ * @str: one char type argument
+ *
+ * Description: print a string follow by a new line to stdout
+ * Return: none
+ */
 
 void _puts(char *str)
 {
@@ -13,5 +16,4 @@ void _puts(char *str)
 		str++;
 	}
 	_putchar('\n');
-	return (0);
 }
