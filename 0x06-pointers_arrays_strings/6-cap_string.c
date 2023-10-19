@@ -2,12 +2,12 @@
 /**
  * cap_string - capitalize each word of a string
  * @s: string to be capitalized
- * Return: caputalized string
+ * Return: captalized string
 */
 
 char *cap_string(char *s)
 {
-	int i;
+	int i, j;
 	char sp[13] = {' ', '\t', '\n', ',', ':', '.', '!', '?',
 '"', '(', ')', '{', '}'};
 	for (i = 0; s[i] != '\0'; i++)
