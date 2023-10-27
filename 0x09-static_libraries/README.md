@@ -1,0 +1,1 @@
+Learnig about static libraries
