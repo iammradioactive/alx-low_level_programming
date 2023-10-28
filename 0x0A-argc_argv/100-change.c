@@ -18,7 +18,7 @@ int main(int argc, char **argv)
 		return (1);
 	}
 
-	change = atoi(argv[i]);
+	change = atoi(argv[1]);
 
 	while (change > 0)
 	{
