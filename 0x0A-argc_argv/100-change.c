@@ -9,9 +9,10 @@
 
 int main(int argc, char **argv)
 {
-	int total, change;
+	int total = 0;
+	int change;
 
-	if (argc < 2)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
@@ -19,7 +20,7 @@ int main(int argc, char **argv)
 
 	change = atoi(argv[i]);
 
-	for (total = 0; change > 0; total++)
+	while (change > 0)
 	{
 		if (change - 25 >= 0)
 			change = change - 25;
@@ -31,6 +32,7 @@ int main(int argc, char **argv)
 			change = change - 2;
 		else if (change - 1 >= 0)
 			change = change - 1;
+		total++;
 	}
 	printf("%d\n", total);
 	return (0);
