@@ -3,7 +3,7 @@
  * str_concat - concatenate two strings
  * @s1: first string
  * @s2: second string
- * Return; pointer
+ * Return: pointer
 */
 
 char *str_concat(char *s1, char *s2)
@@ -22,8 +22,7 @@ char *str_concat(char *s1, char *s2)
 	for (i = 0; s2[i] != '\0'; i++)
 		s2len++;
 
-	output = malloc(sizeof(char) * (s1len + s2len) + 1);
-	
+	output = malloc(sizeof(char) * (s1len + s2len) + 1);	
 	if (output == NULL)
 		return (NULL);
 	for (i = 0; s1[i] != '\0'; i++)
