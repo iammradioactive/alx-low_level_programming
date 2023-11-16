@@ -1,5 +1,5 @@
 #include <stdio.h>
-void pre_main(void) __attribute__ ((constructor));
+void pre_main(void)__attribute__ ((constructor));
 /**
   * pre_main - prints string before main is executed
   */
