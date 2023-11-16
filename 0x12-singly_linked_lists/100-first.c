@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
   * pre_main - prints string before main is executed
+  * Return: no return
   */
 
 void pre_main(void)
