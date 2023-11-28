@@ -41,9 +41,10 @@ int main(int argc, char *argv[])
 	}
 
 	fd_from = open(argv[1], O_RDONLY);
-	fd_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
+	fd_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	error_file(fd_from, fd_to, argv);
-	while (read_result == BUF_SIZE)
+	read_result = read(fd_from, buffer, BUF_SIZE)
+	while (read_result > 0)
 	{
 		read_result = read(fd_from, buffer, BUF_SIZE);
 		if (read_result == -1)
