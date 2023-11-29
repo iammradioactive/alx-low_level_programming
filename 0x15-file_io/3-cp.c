@@ -43,6 +43,7 @@ int main(int argc, char *argv[])
 	fd_from = open(argv[1], O_RDONLY);
 	fd_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	error_file(fd_from, fd_to, argv);
+
 	read_result = read(fd_from, buffer, BUF_SIZE);
 	while (read_result > 0)
 	{
@@ -62,7 +63,7 @@ int main(int argc, char *argv[])
 
 	if (close(fd_to) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_from);
 		exit(100);
 	}
 
